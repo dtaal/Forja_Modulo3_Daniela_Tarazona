@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/881c9f753a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo"><img src="img/0. logoforja.png" alt="logo forja"></div>
+        <div class="buttons"><button><a href="dashboard.html"><i class="fa-solid fa-house-user"></i></a></button>
+            <button><a href="login.html"><i class="fa-solid fa-power-off"></i> </a></button>
+        </div>
+    </header>
+    <img class="separador" src="img/12. franja.svg" alt="">
+    <div class="pac-separador">
+        <h1>REGISTRO USUARIO NUEVO</h1>
+    </div>
+
+    <main class="form-container" id="form-container">
+        <div class="form-log">
+            <form action="index.html">
+                <label for="date-log"></label>
+                <input type="date" placeholder="Fecha">
+                <input type="number" placeholder="N. registro">
+        </div>
+        <div class="tittle"><i class="fa-solid fa-user"></i>
+            <h2>DATOS DEL PACIENTE</h2>
+        </div>
+        <div class="pacient-dates">
+            <label for="name" id="name"></label>
+            <input type="text" placeholder="Escribe tu nombre">
+            <label for="document" id="document"></label>
+            <input type="number" placeholder="Número de identificación">
+            <label for="date" id="date"></label>
+            <input type="date" placeholder="Fecha de Nacimiento">
+            <label for="lastname" id="lastname"></label>
+            <input type="text" placeholder="Apellidos">
+            <label for="type-document"></label>
+            <select name="ciudad" id="ciudad">
+                <option value="0">Tipo de documento</option>
+                <option value="1">Cédula de ciudadanía</option>
+                <option value="2">Tarjeta de Identidad</option>
+                <option value="3">Registro Civil</option>
+                <option value="4"></option>
+            </select>
+            <label for="age" id="age"></label>
+            <input type="Number" placeholder="Edad">
+        </div>
+        </form>
+        </div>
+        <div class="tittle"><i class="fa-solid fa-location-dot"></i>
+            <h2>INFORMACIÓN DE CONTACTO</h2>
+        </div>
+        <div class="pacient-dates">
+            <label for="departamento"></label>
+            <select class="departament" id="departament" name="departament">
+                <option value="0">Departamento de Residencia</option>
+                <option value="1">Amazonas</option>
+                <option value="2">Antioquia</option>
+                <option value="3">Arauca</option>
+                <option value="4">Atlántico</option>
+                <option value="5">Bolívar</option>
+                <option value="6">Boyacá</option>
+                <option value="7">Caldas</option>
+                <option value="8">Caquetá</option>
+                <option value="9">Casanare</option>
+                <option value="10">Cauca</option>
+                <option value="11">Cesar</option>
+                <option value="12">Chocó</option>
+                <option value="13">Córdoba</option>
+                <option value="14">Cundinamarca</option>
+                <option value="15">Guainía</option>
+                <option value="16">Guaviare</option>
+                <option value="17">Huila</option>
+                <option value="18">La Guajira</option>
+                <option value="19">Magdalena</option>
+                <option value="20">Meta</option>
+                <option value="21">Nariño</option>
+                <option value="22">Norte de Santander</option>
+                <option value="23">Putumayo</option>
+                <option value="24">Quindío</option>
+                <option value="25">Risaralda</option>
+                <option value="26">San Andrés y Providencia</option>
+                <option value="27">Santander</option>
+                <option value="28">Sucre</option>
+                <option value="29">Tolima</option>
+                <option value="30">Valle del Cauca</option>
+                <option value="31">Vaupés</option>
+                <option value="32">Vichada</option>
+            </select>
+            <label for="direction" id="direction"></label>
+            <input type="text" placeholder="Escribe tu dirección">
+            <label for="teléfono" id="teléfono"></label>
+            <input type="number" placeholder="Teléfono fijo">
+            <label for="city" class="city"></label>
+            <select class="form-city" id="form-city">
+                <option value="Municipio de Residencia">Municipio de Residencia</option>
+                <option value="Arauca">Arauca</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Cali">Cali</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="Cúcuta">Cúcuta</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Ibagué">Ibagué</option>
+                <option value="Leticia">Leticia</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Mitú">Mitú</option>
+                <option value="Mocoa">Mocoa</option>
+                <option value="Montería">Montería</option>
+                <option value="Neiva">Neiva</option>
+                <option value="Pasto">Pasto</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Popayán">Popayán</option>
+                <option value="Puerto Carreño">Puerto Carreño</option>
+                <option value="Puerto Inírida">Puerto Inírida</option>
+                <option value="Quibdó">Quibdó</option>
+                <option value="Riohacha">Riohacha</option>
+                <option value="San Andrés">San Andrés</option>
+                <option value="San José del Guaviare">San José del Guaviare</option>
+                <option value="Santa Marta">Santa Marta</option>
+                <option value="Sincelejo">Sincelejo</option>
+                <option value="Tunja">Tunja</option>
+                <option value="Valledupar">Valledupar</option>
+                <option value="Villavicencio">Villavicencio</option>
+                <option value="Yopal">Yopal</option>
+            </select>
+            <label for="email" id="email"></label>
+            <input type="email" placeholder="Correo">
+            <label for="phone" id="phone"></label>
+            <input type="number" placeholder="Celular">
+        </div>
+        <div class="tittle"><i class="fa-solid fa-heart-pulse"></i>
+            <h2>ESTADO DE SALUD</h2>
+        </div>
+        <div class="health">
+            <label for="form-health" class="form-health"></label>
+            <select class="formhealth" id="formhealth">
+                <option value="0">Preexistencias</option>
+                <option value="1">Enfermedad 1 </option>
+                <option value="2">Enfermedad 2</option>
+                <option value="3">Enfermedad 3</option>
+                <option value="4">Enfermedad 4</option>
+                <option value="5">Enfermedad 5</option>
+                <option value="6">Enfermedad 6</option>
+                <option value="7">Enfermedad 7</option>
+                <option value="8">Enfermedad 8</option>
+                <option value="9">Enfermedad 9</option>
+                <option value="10">Enfermedad 10</option>
+                <option value="11">Ninguna</option>
+            </select>
+            <label for="form-health" class="form-health"></label>
+            <select class="formhealth" id="formhealth">
+                <option value="0">Discapacidad</option>
+                <option value="1">Discapacidad física </option>
+                <option value="2">Discapacidad auditiva</option>
+                <option value="3">Discapacidad visual</option>
+                <option value="4">Sordoceguera</option>
+                <option value="5">Discapacidad intelectual</option>
+                <option value="6">Discapacidad psicosocial (mental)</option>
+                <option value="7">Discapacidad múltiple</option>
+                <option value="8">Ninguna</option>
+            </select>
+            <input type="text" placeholder="Alergias">
+        </div>
+
+        <div>
+            <label for="pruebacovid-">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido
+                positiva?</label>
+            <div class="prueba-covid">
+                <input name="pruebacovid" id="pruebacovid" type="radio">Sí
+                <input name="pruebacovid" id="pruebacovid" type="radio"> No
+            </div>
+        </div>
+
+        <div class="pruebacovid-">
+            <label for="pruebacovid-">¿El paciente ha tenido contacto estrecho o cercano con una persona confirmada o
+                sospechosa COVID-19 en los últimos 14 días?</label>
+            <div class="prueba-covid">
+                <input name="pruebacovid" id="pruebacovid" type="radio">Sí
+                <input name="pruebacovid" id="pruebacovid" type="radio"> No
+            </div>
+        </div>
+        </form>
+
+    </main>
+    <button class="guardar"><a href="pacienteslog.html"></a>Guardar</button>
+    <footer>
+        @2020 FORJA EMPRESAS
+    </footer>
+</body>
+
+</html>
