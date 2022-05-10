@@ -10,7 +10,7 @@
 
 <body class="body-login">
     <button class="volver-inicio"><a href="index.html"> Volver al inicio</a></button>
-    <form action="dashboard.html" method="get" id="form-login" class="form-login">
+    <form !--No podrá ver este texto-- method="get" id="form-login" class="form-login">
         <div class="header-form">
             <img src="img/0. logoforja.png" alt="logoforja">
             <h3>Contigo, siempre!</h3>
@@ -18,14 +18,17 @@
         <div class="user-password">
             <label for="user"></label>
             <p>Usuario</p>
-            <input type="text" class="user">
+            <input type="text" class="user" name="login" id="login">
+
             <label for="password"></label>
             <p>Contraseña</p>
-            <input type="password" class="user">
+            <input type="password" class="user" name="password" id="password">
+            
             <h5>¿Olvidaste tu contraseña?</h5>
-            <button class="login-button">Ingresar</button>
+            <button class="login-button" id="login-button" onclick="ir()">Ingresar</button>
         </div>
     </form>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
