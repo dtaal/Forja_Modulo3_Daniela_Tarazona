@@ -997,15 +997,16 @@ a {
 .modal_container {
   background-color: #fff;
   margin: auto;
-  width: 90%;
+  width: 95%;
   max-width: 400px;
-  height: 70%;
+  height: 85%;
   border-radius: 6%;
   padding:3em 2.5em;
   place-items: center;
   display: grid;
   gap: 1em;
   grid-auto-columns: 100%;
+  text-align: center;
 }
 
 .modal--show {
@@ -1013,8 +1014,8 @@ a {
   pointer-events: unset;
 }
 
-.modal img {
-  width: 90px;
+.modal, .modal-secondary, .modal-terciary, .modal-quaternary img {
+  width: 70px;
 }
 
 .modal_link {

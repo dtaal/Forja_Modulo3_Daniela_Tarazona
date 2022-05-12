@@ -1,6 +1,6 @@
 let logButton=document.getElementById ('login-button');
 
-logButton.addEventListener('click', enviar=(e)=>{
+logButton.addEventListener('click', (e)=>{
   e.preventDefault();
 
   var logUser=document.getElementById ('login').value;
