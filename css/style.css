@@ -1014,10 +1014,6 @@ a {
   pointer-events: unset;
 }
 
-.modal, .modal-secondary, .modal-terciary, .modal-quaternary img {
-  width: 70px;
-}
-
 .modal_link {
   background-color: #2CA3AB;
   padding: 7px;
