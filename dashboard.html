@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/881c9f753a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -31,14 +32,82 @@
             <div class="dash-numdoc">
                 <h1>BIENVENIDOS</h1>
                 <label for="doc-dashboard"></label>
-                <input type="text" placeholder="Ingrese su número de documento">
-                <button class="dash-search"><a href="pacienteslog.html"><i
-                            class="fa-solid fa-magnifying-glass"></i></a></button>
+
+                <input type="number" placeholder="Ingrese su número de documento" id="documentNum">
+
+                <button class="dash-search" id="formSearch" name="formSearch" onclick="formNum()"><i
+                class="fa-solid fa-magnifying-glass"></i></a></button>
+
                 <button class="dash-search"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+
                 <div class="separador-"><img src="img/12. franja.svg" alt=""></div>
         </article>
         </div>
     </section>
+    <section class="modal">
+        <div class="modal_container">
+            <img src="img/bxs-injection 1.svg" alt="">
+            <h2>Registro de vacunas</h2>
+            <h3>Paciente: Jorge Ramirez</h3>
+            <h3>C.C. 52368795 </h3>
+         <ul class="list_modal">
+             <li>Primer dosis:Pfizer</li>
+             <li>Fecha de aplicación:10/12/2021</li>
+             <li>Segunda dosis:No registra</li>
+         </ul>
+         <h4>¿Desea ingresar nuevos datos?</h4>
+         <a href="pacientesregister.html" class="modal_link">Aceptar</a>
+         <a href="#" class="modal_close">Cerrar</a>
+        </div>
+    </section>
+        <section class="modal-secondary">
+            <div class="modal_container">
+                <img src="img/bxs-injection 1.svg" alt="">
+                <h2>Registro de vacunas</h2>
+                <h3>Paciente: Laura Celis</h3>
+                <h3>C.C. 1001235478 </h3>
+             <ul class="list_modal">
+                 <li>Primer dosis:Sivonac</li>
+                 <li>Fecha de aplicación:15/06/2021</li>
+                 <li>Segunda dosis:Sinovac</li>
+                 <li>Fecha de aplicación:18/09/2021</li>
+                 <li>Tercera dosis:No registra</li>
+             </ul>
+             <h4>¿Desea ingresar nuevos datos?</h4>
+             <a href="pacientesregister.html" class="modal_link">Aceptar</a>
+             <a href="#" class="modal_close">Cerrar</a>
+            </div>
+        </section>
+            <section class="modal-terciary">
+                <div class="modal_container">
+                    <img src="img/bxs-injection 1.svg" alt="">
+                    <h2>Registro de vacunas</h2>
+                    <h3>Paciente: Jennifer Fajardo</h3>
+                    <h3>C.C. 25413574 </h3>
+                 <ul class="list_modal">
+                     <li>Primera dosis:Janssen</li>
+                     <li>Fecha de aplicación:07/08/2021</li>
+                     <li>Segunda dosis:No aplica</li>
+                     <li>Terca dosis (Refuerzo):Moderna</li>
+                     <li>Fecha de aplicación:10/02/2022</li>
+                 </ul>
+                 <h4>¡Felicitaciones! Esquema de Vacunación completo.</h4>
+                 <a href="#" class="modal_close">Cerrar</a>
+                </div>
+        </section>
+        <section class="modal-quaternary">
+            <div class="modal_container">
+                <img src="img/bxs-injection 1.svg" alt="">
+                <h2>Registro de vacunas</h2>
+                <h3>Paciente: Víctor Carvajal</h3>
+                <h3>C.C. 1007203506 </h3>
+            <h1>¡No cuenta con datos de vacunación!</h1>
+             <h4>¿Desea ingresar nuevos datos?</h4>
+             <a href="pacientesregister.html" class="modal_link">Aceptar</a>
+             <a href="#" class="modal_close">Cerrar</a>
+            </div>
+        </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

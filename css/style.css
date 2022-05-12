@@ -978,3 +978,63 @@ a {
     margin-top: 0%;
   }
 }
+
+/* ESTILOS MODAL */
+
+.modal, .modal-secondary, .modal-terciary, .modal-quaternary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(29,20,81,0.9) 0%, rgba(44,163,171,0.9) 100%);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.modal_container {
+  background-color: #fff;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  height: 70%;
+  border-radius: 6%;
+  padding:3em 2.5em;
+  place-items: center;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.modal img {
+  width: 90px;
+}
+
+.modal_link {
+  background-color: #2CA3AB;
+  padding: 7px;
+  border-radius: 3%;
+}
+.modal_link:hover {
+  background-color:#fff;
+  border:#2CA3AB solid 2px;
+  color: #2CA3AB;
+}
+.modal_close {
+  background-color: #A40101;
+  padding: 7px;
+  border-radius: 3%;
+}
+
+.modal_close:hover {
+  background-color: #fff;
+  border:#A40101 solid 2px;
+  color: #A40101;
+}

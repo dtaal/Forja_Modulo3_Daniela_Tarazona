@@ -1,15 +1,20 @@
-function ir(){
-var log=document.getElementById("login").value;
-var pass=document.getElementById("password").value;
-  console.log (log)
-  console.log (pass)
+let logButton=document.getElementById ('login-button');
 
-if (log=="Admin" && pass=="Kuepa2022"){
-   alert ("Correcto")
-   window.location="dashboard.html"
+logButton.addEventListener('click', enviar=(e)=>{
+  e.preventDefault();
+
+  var logUser=document.getElementById ('login').value;
+  var logPass=document.getElementById ('password').value;
+
+if (logUser=="Admin" && logPass=="Kuepa2022"){
+  window.setTimeout(()=>{window.location.href='dashboard.html'},1000);
 }
+
 else {
-    alert ("Incorrecto")
+  Swal.fire({
+    icon: 'error',
+    title: 'Inicio de sesión inválido',
+    text: 'Intenta nuevamente',
+  })
 }
-}
-
+});
