@@ -23,33 +23,33 @@
 
     <main class="form-container" id="form-container">
         <div class="form-log">
-            <form action="index.html">
+            <form action="" id="form-user" method="post">
                 <label for="date-log"></label>
-                <input type="date" placeholder="Fecha">
-                <input type="number" placeholder="N. registro">
+                <input type="date" id="dates" placeholder="Fecha de registro" required>
+                <input type="number" id="docnum" placeholder="N. registro" required>
         </div>
         <div class="tittle"><i class="fa-solid fa-user"></i>
             <h2>DATOS DEL PACIENTE</h2>
         </div>
         <div class="pacient-dates">
             <label for="name" id="name"></label>
-            <input type="text" placeholder="Escribe tu nombre">
-            <label for="document" id="document"></label>
-            <input type="number" placeholder="Número de identificación">
-            <label for="date" id="date"></label>
-            <input type="date" placeholder="Fecha de Nacimiento">
+            <input type="text" id="name" placeholder="Escribe tu nombre" required>
             <label for="lastname" id="lastname"></label>
-            <input type="text" placeholder="Apellidos">
-            <label for="type-document"></label>
-            <select name="ciudad" id="ciudad">
+            <input type="text" id="lastname" placeholder="Apellidos" required>
+            <label for="type-document" id="doctype"></label>
+            <select name="type-document" id="doctype" required>
                 <option value="0">Tipo de documento</option>
                 <option value="1">Cédula de ciudadanía</option>
                 <option value="2">Tarjeta de Identidad</option>
                 <option value="3">Registro Civil</option>
                 <option value="4"></option>
             </select>
+            <label for="type-document"></label>
+            <input type="number" id="docnum" placeholder="Número de identificación" required>
+            <label for="date" id="date"></label>
+            <input type="date" id="dates" placeholder="Fecha de Nacimiento" required>
             <label for="age" id="age"></label>
-            <input type="Number" placeholder="Edad">
+            <input type="Number" id="age" placeholder="Edad" required>
         </div>
         </form>
         </div>
@@ -57,8 +57,10 @@
             <h2>INFORMACIÓN DE CONTACTO</h2>
         </div>
         <div class="pacient-dates">
+            <label for="direction" id="direction"></label>
+            <input type="text" id="address" placeholder="Escribe tu dirección" required>
             <label for="departamento"></label>
-            <select class="departament" id="departament" name="departament">
+            <select class="departament" id="departament" name="departament" id="formcity" required>
                 <option value="0">Departamento de Residencia</option>
                 <option value="1">Amazonas</option>
                 <option value="2">Antioquia</option>
@@ -93,12 +95,10 @@
                 <option value="31">Vaupés</option>
                 <option value="32">Vichada</option>
             </select>
-            <label for="direction" id="direction"></label>
-            <input type="text" placeholder="Escribe tu dirección">
             <label for="teléfono" id="teléfono"></label>
-            <input type="number" placeholder="Teléfono fijo">
+            <input type="number" id="docnum" placeholder="Teléfono fijo">
             <label for="city" class="city"></label>
-            <select class="form-city" id="form-city">
+            <select class="form-city" id="formcity" required>
                 <option value="Municipio de Residencia">Municipio de Residencia</option>
                 <option value="Arauca">Arauca</option>
                 <option value="Armenia">Armenia</option>
@@ -134,16 +134,16 @@
                 <option value="Yopal">Yopal</option>
             </select>
             <label for="email" id="email"></label>
-            <input type="email" placeholder="Correo">
+            <input type="email" id="email" placeholder="Correo" required>
             <label for="phone" id="phone"></label>
-            <input type="number" placeholder="Celular">
+            <input type="number" id="phone" placeholder="Celular" required>
         </div>
         <div class="tittle"><i class="fa-solid fa-heart-pulse"></i>
             <h2>ESTADO DE SALUD</h2>
         </div>
         <div class="health">
             <label for="form-health" class="form-health"></label>
-            <select class="formhealth" id="formhealth">
+            <select class="formhealth" id="formhealth" required>
                 <option value="0">Preexistencias</option>
                 <option value="1">Enfermedad 1 </option>
                 <option value="2">Enfermedad 2</option>
@@ -158,7 +158,7 @@
                 <option value="11">Ninguna</option>
             </select>
             <label for="form-health" class="form-health"></label>
-            <select class="formhealth" id="formhealth">
+            <select class="formhealth" id="formhealth" required>
                 <option value="0">Discapacidad</option>
                 <option value="1">Discapacidad física </option>
                 <option value="2">Discapacidad auditiva</option>
@@ -169,7 +169,7 @@
                 <option value="7">Discapacidad múltiple</option>
                 <option value="8">Ninguna</option>
             </select>
-            <input type="text" placeholder="Alergias">
+            <input type="text" id="alergias" placeholder="Alergias">
         </div>
 
         <div>
@@ -192,10 +192,11 @@
         </form>
 
     </main>
-    <button class="guardar"><a href="pacienteslog.html"></a>Guardar</button>
+    <button type="submit" class="guardar">Guardar</button>
     <footer>
         @2020 FORJA EMPRESAS
     </footer>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
