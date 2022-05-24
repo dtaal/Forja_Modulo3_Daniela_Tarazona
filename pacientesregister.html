@@ -21,9 +21,9 @@
         <h1>REGISTRO USUARIO NUEVO</h1>
     </div>
 
-    <main class="form-container" id="form-container">
+    <section class="form-container" id="form-container">
         <div class="form-log">
-            <form action="" id="form-user" method="post">
+            <form action="" id="form-user" method="get">
                 <label for="date-log"></label>
                 <input type="date" id="dates" placeholder="Fecha de registro" required>
                 <input type="number" id="docnum" placeholder="N. registro" required>
@@ -51,7 +51,6 @@
             <label for="age" id="age"></label>
             <input type="Number" id="age" placeholder="Edad" required>
         </div>
-        </form>
         </div>
         <div class="tittle"><i class="fa-solid fa-location-dot"></i>
             <h2>INFORMACIÓN DE CONTACTO</h2>
@@ -189,10 +188,12 @@
                 <input name="pruebacovid" id="pruebacovid" type="radio"> No
             </div>
         </div>
-        </form>
+    </section>
+    <div>
+        <button type="submit" class="guardar" value="submit">Guardar</button>  
+    </div>   
+</form>
 
-    </main>
-    <button type="submit" class="guardar">Guardar</button>
     <footer>
         @2020 FORJA EMPRESAS
     </footer>

@@ -527,7 +527,7 @@ footer {
       display: flex;
       flex-direction: column;
       width: 150px;
-      height: 1000px;
+      height: 900px;
       justify-content: space-evenly;
     }
 
@@ -541,7 +541,7 @@ footer {
     }
 
     .separador- img {
-      margin-top: 114%;
+      margin-top: 89%;
       border-bottom: #2CA3AB solid 5px;
     }
 
@@ -572,7 +572,7 @@ footer {
   }
 
   .separador- img {
-    margin-top: 59%;
+    margin-top: 69%;
     border-bottom: #2CA3AB solid 5px;
     max-width: 2400px;
     width: 100%;
